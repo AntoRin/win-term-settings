@@ -83,6 +83,22 @@
                 "action": "scrollUpPage"
             },
             "keys": "pgup"
+        },
+        {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "backward"
+            },
+            "keys": "ctrl+shift+pgup"
+        },
+        {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "forward"
+            },
+            "keys": "ctrl+shift+pgdn"
         }
     ],
     "copyFormatting": "none",
