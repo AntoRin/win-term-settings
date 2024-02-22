@@ -1,4 +1,4 @@
-# /d/code is a ample path for the code directory
+# /d/code is a sample path for the code directory
 export PATH="$PATH:/d/code/bin"
 
 alias codedir="cd /d/code"
@@ -21,3 +21,5 @@ sshgh() {
 	eval `ssh-agent`
 	ssh-add ~/.ssh/<private_key>
 }
+
+PROMPT_COMMAND=${PROMPT_COMMAND:+"$PROMPT_COMMAND; "}'printf "\e]9;9;%s\e\\" "`cygpath -w "$PWD" -C ANSI`"'
